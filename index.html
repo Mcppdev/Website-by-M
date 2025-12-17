@@ -23,8 +23,9 @@
       <nav aria-label="Main navigation" class="nav-main">
         <ul class="nav-list">
           <li><a href="#home">Home</a></li>
-          <li><a href="#">Dev Skills</a></li>
+          <li><a href="#portfolio">Dev Skills</a></li>
           <li><a href="#skills">Skills</a></li>
+          <li><a href="#ctf-writeups">CTF-Writeups</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -35,10 +36,9 @@
     <section id="home" class="hero">
       <div class="container hero-inner">
         <div class="hero-text">
-          <h1>Offensive Security <span class="researcher-gray">Researcher</span></h1> 
+          <h1>Cybersecurity Enthusiast <span class="researcher-gray">& Learner</span></h1> 
           <p class="lead">
-            Offensive Security Researcher with a focus on penetration testing and vulnerability discovery. 
-            Continuously honing skills through hands-on CTF challenges and real-world security research.
+            Exploring networks, web security, and practical cybersecurity through hands-on CTF challenges and detailed writeups.
           </p>
           <div class="hero-stats">
             <div class="stat">
@@ -66,17 +66,7 @@
     <div class="portfolio-inner">
       <h2>My Programming Languages</h2>
       <div class="cards-grid">
-        <div class="card">
-          <div class="card-content">
-            <h3>Bash</h3>
-            <div class="progress-container">
-              <div class="progress-bar">
-                <div class="progress-fill" style="width: 90%"></div>
-              </div>
-              <div class="progress-percentage">90%</div>
-            </div>
-          </div>
-        </div>
+        <!-- Bash entry removed per request -->
         <div class="card">
           <div class="card-content">
             <h3>C++</h3>
@@ -84,7 +74,7 @@
               <div class="progress-bar">
                 <div class="progress-fill" style="width: 95%"></div>
               </div>
-              <div class="progress-percentage">95%</div>
+              <div class="progress-percentage">30%</div>
             </div>
           </div>
         </div>
@@ -95,7 +85,7 @@
               <div class="progress-bar">
                 <div class="progress-fill" style="width: 85%"></div>
               </div>
-              <div class="progress-percentage">85%</div>
+              <div class="progress-percentage">60%</div>
             </div>
           </div>
         </div>
@@ -114,18 +104,73 @@
         <div class="skills-list">
           <div class="skill-item">
             <h3>Linux</h3>
-            <p>Basic commands and system fundamentals</p>
+            <p>Linux commands and system fundamentals</p>
           </div>
           <div class="skill-item">
             <h3>Networking</h3>
-            <p>IPs, ports, protocols, and network fundamentals</p>
+            <p>IP addresses, ports, protocols, OSI model, CTF & lab experience</p>
           </div>
           <div class="skill-item">
             <h3>Passion</h3>
-            <p>Learn and grow</p>
+            <p>Practical experience through CTFs, labs, writeups and continuous learning</p>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTF Writeups Section -->
+<section id="ctf-writeups" class="section ctf">
+  <div class="container">
+    <div class="ctf-header">
+      <h2>CTF Writeups</h2>
+      <p class="lead">Detailed, step-by-step writeups of CTF challenges I solved — each entry includes a clear summary, tags and a downloadable PDF with full analysis.</p>
+    </div>
+
+    <div class="ctf-grid" role="list">
+      <article class="ctf-card" role="listitem" tabindex="0">
+        <div class="ctf-card-body">
+          <h3 class="ctf-title">Exploit-Me — Remote Execution</h3>
+          <p class="ctf-excerpt">Rooted a vulnerable service using a command injection chain and wrote a reliable exploit. Includes PoC and mitigation notes.</p>
+          <div class="ctf-meta">
+            <span class="ctf-tag">pwn</span>
+            <span class="ctf-tag">command-injection</span>
+            <span class="ctf-badge">Difficulty: Medium</span>
+            <time datetime="2025-08-12" class="ctf-date">Aug 12, 2025</time>
+          </div>
+        </div>
+        <div class="ctf-actions">
+          <a class="download-btn" href="Networking Basics Teil IP-Adressen.pdf" download target="_blank" aria-label="Download Exploit-Me writeup PDF">
+            <!-- PDF icon inline -->
+            <svg class="pdf-icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M6 2h7l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zM13 3.5V9h5.5L13 3.5z"/></svg>
+            <span>Download PDF</span>
+          </a>
+        </div>
+      </article>
+
+      <article class="ctf-card" role="listitem" tabindex="0">
+        <div class="ctf-card-body">
+          <h3 class="ctf-title">WebFun — Auth Bypass</h3>
+          <p class="ctf-excerpt">Found and exploited an insecure cookie flow to bypass auth. Includes step-by-step replay and fixed patch notes.</p>
+          <div class="ctf-meta">
+            <span class="ctf-tag">web</span>
+            <span class="ctf-tag">auth</span>
+            <span class="ctf-badge">Difficulty: Easy</span>
+            <time datetime="2025-09-01" class="ctf-date">Sep 01, 2025</time>
+          </div>
+        </div>
+        <div class="ctf-actions">
+          <a class="download-btn" href="ctf-example-writeup.pdf" download target="_blank" aria-label="Download WebFun writeup PDF">
+            <svg class="pdf-icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M6 2h7l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zM13 3.5V9h5.5L13 3.5z"/></svg>
+            <span>Download PDF</span>
+          </a>
+        </div>
+      </article>
+    </div>
+
+    <div class="ctf-footer">
+      <a href="ctf-writeups/" class="download-btn ctf-view-all" aria-label="View all CTF writeups">View all writeups</a>
     </div>
   </div>
 </section>
